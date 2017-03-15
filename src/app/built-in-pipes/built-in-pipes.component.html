@@ -1,0 +1,8 @@
+<h3>What's your name? </h3>
+<input [(ngModel)]='yourName' placeholder="oleh">
+<p>Hello, {{ yourName | capitalize}}</p>
+
+
+<p>Date: {{ today }}</p>
+<p>pretty Date: {{ today | date:'EEEE, MMMM  dd / yyyy'}}
+<button (click)='increment()'>Add one day</button>
